@@ -34,11 +34,10 @@ header a {
 }
 
 h1 {
-    font-family: 'oswald' sans-serif;
+    font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-
 }
 
 #menu {
@@ -55,8 +54,19 @@ h1 {
     border-bottom: 1px solid #252525;
 }
 
+/* Nav bar style with drop down selection */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
 main {
-    background-color: blue;
+    background-color: #ffffff;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
