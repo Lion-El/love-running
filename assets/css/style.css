@@ -171,9 +171,9 @@ main {
     margin: 20px;
 }
 
-#benefits {
+/* #benefits {
    padding: 0 20px; 
-}
+} */
 
 #benefits div {
     margin-bottom: 20px;
@@ -186,6 +186,17 @@ main {
 #benefits p {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#circle-cover-bg {
+    width: 75vw;
+    height: 75vw;
+    margin: 20px auto;
+    background: url(../images/reasons-image.webp) no-repeat center center/cover;
+    /* create circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* Footer */
