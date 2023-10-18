@@ -167,7 +167,7 @@ main {
     text-align: center;
 }
 
-#benefits {
+#benefits-container {
     margin: 20px;
 }
 
@@ -175,15 +175,15 @@ main {
    padding: 0 20px; 
 } */
 
-#benefits div {
+.benefits div {
     margin-bottom: 20px;
 }
 
-#benefits i {
+.benefits i {
     margin-left: 8px;
 }
 
-#benefits p {
+.benefits p {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
@@ -254,6 +254,28 @@ main {
         width: 300px;
         right: 50px;
     }
+
+    /* reasons section */
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .physical > div,
+    .mental > div {
+        width: 75%;
+    }
+
+    .mental > div {
+        text-align: right;
+        align-self: flex-end;
+    }
+
+    .physical > div {
+        text-align: left;
+        align-self: flex-start;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -262,3 +284,18 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+/* Large devices (laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #benefits-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #benefits-container > div:nth-child(2) {
+        order: 3;
+    }
+}
+
+
