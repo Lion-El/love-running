@@ -233,7 +233,6 @@ main {
 /* main end */
 
 /* new page - gallery */
-
 #photos img {
     width: 100%;
     /* to ensure full alt message shows  */
@@ -243,6 +242,7 @@ main {
 #photos {
     line-height: 0;
 }
+/* gallery page end */
 
 /* Footer */
 #social-media {
@@ -255,6 +255,14 @@ main {
 .fa-brands {
     font-size: 1.4rem;
     color: #3a3a3a;
+}
+
+/* Media query: larger mobile phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -321,12 +329,24 @@ main {
         text-align: left;
         align-self: flex-start;
     }
+
+    /* gallery page responsive styles */
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* gallery page responsive styles */
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
 
