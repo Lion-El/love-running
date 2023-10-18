@@ -84,7 +84,7 @@ nav {
     font-weight: bolder;
     top: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    transition: all 0.8s;
+    transition: all 0.4s;
 }
 
 #nav-toggle {
@@ -104,23 +104,29 @@ nav {
 
 .line-1, .line-3, .line-2 {
     width: 1.8rem;
-    transition: all 0.4s;
+    transition: all 2s;
 }
 
 #nav-toggle:checked~.nav-toggle-label .line-1	{
 	transform: translateY(7px);
 	width: 1.8rem;
+    transition: all 0.4s;
 }
 
 #nav-toggle:checked~.nav-toggle-label .line-3	{
 	transform: translateY(-7px);
 	width: 1.8rem;
+    transition: all 0.4s;
 }
 
 #nav-toggle:checked~.nav-toggle-label .line-2	{
 	opacity: 0;
+    transition: all 0.4s;
 }
 /* Navbar styles with dropdown toggle end*/
+
+/* header end */
+
 
 /* Main content */
 main {
