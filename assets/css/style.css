@@ -153,8 +153,39 @@ main {
     padding: 40px 0 0 10px;
 }
 
-#cover-text > h2, h3 {
+#cover-text > h2, #cover-text > h3 {
     color: #ffffff;
+}
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons > h2 {
+    font-size: 280%;
+    text-align: center;
+}
+
+#benefits {
+    margin: 20px;
+}
+
+#benefits {
+   padding: 0 20px; 
+}
+
+#benefits div {
+    margin-bottom: 20px;
+}
+
+#benefits i {
+    margin-left: 8px;
+}
+
+#benefits p {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
 
 /* Footer */
