@@ -232,6 +232,18 @@ main {
 
 /* main end */
 
+/* new page - gallery */
+
+#photos img {
+    width: 100%;
+    /* to ensure full alt message shows  */
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* Footer */
 #social-media {
     display: flex;
