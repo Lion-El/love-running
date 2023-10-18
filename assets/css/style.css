@@ -75,18 +75,18 @@ nav {
 
 /* Nav toggle */
 nav {
-    transition: all 2s;
     color: #ffffff;
-    font-weight: normal;
+    font-weight:lighter;
     top: -115.781px;
+    transition: all 2s;
 }
 
 #nav-toggle:checked~nav {
-    transition: all 0.8s;
     color: #3a3a3a;
-    font-weight: bold;
+    font-weight: bolder;
     top: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    transition: all 0.8s;
 }
 
 /* #nav-toggle:checked~nav li {
@@ -109,7 +109,7 @@ nav {
 	margin-top: 0.6rem;
 }
 
-.line-1, .line-3 {
+.line-1, .line-3, .line-2 {
     width: 1.8rem;
     transition: all 0.4s;
 }
@@ -155,9 +155,11 @@ main {
     nav {
         display: block;
         position: relative;
+        top: 0%;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        color: #3a3a3a;
     }
 
     #menu {
