@@ -63,32 +63,7 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles with dropdown toggle */
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    z-index: -1;
-}
-
 /* Nav toggle */
-nav {
-    color: #ffffff;
-    font-weight:lighter;
-    top: -115.781px;
-    transition: all 2s;
-}
-
-#nav-toggle:checked~nav {
-    color: #3a3a3a;
-    font-weight: bolder;
-    top: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    transition: all 0.4s;
-}
-
 #nav-toggle {
     display: none;
 }
@@ -97,35 +72,22 @@ nav {
     font-size: 2rem;
 }
 
-.line	{
-	height: 0.2rem;
-	width: 1.8rem;
-	background-color: #3a3a3a;
-	margin-top: 0.6rem;
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    top: 100%;
+    display: none;
 }
 
-.line-1, .line-3, .line-2 {
-    width: 1.8rem;
-    transition: all 2s;
+#nav-toggle:checked~nav {
+    color: #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: block
 }
-
-#nav-toggle:checked~.nav-toggle-label .line-1	{
-	transform: translateY(7px);
-	width: 1.8rem;
-    transition: all 0.4s;
-}
-
-#nav-toggle:checked~.nav-toggle-label .line-3	{
-	transform: translateY(-7px);
-	width: 1.8rem;
-    transition: all 0.4s;
-}
-
-#nav-toggle:checked~.nav-toggle-label .line-2	{
-	opacity: 0;
-    transition: all 0.4s;
-}
-/* Navbar styles with dropdown toggle end*/
+/* Nav toggle end*/
 
 /* header end */
 
@@ -266,12 +228,10 @@ main {
 }
 
 h2 i {
-    font-size: 2rem;
     padding-right: 8px;
 }
 
-h2 {
-    font-size: 2rem;
+form h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
